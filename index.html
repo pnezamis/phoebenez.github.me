@@ -1,36 +1,29 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>slideDown demo</title>
-  <style>
-  div {
-    background: #de9a44;
-    margin: 3px;
-    width: 80px;
-    height: 40px;
-    display: none;
-    float: left;
-  }
-  </style>
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-</head>
-<body>
- 
-Click me!
-<div></div>
-<div></div>
-<div></div>
- 
-<script>
-$( document.body ).click(function () {
-  if ( $( "div:first" ).is( ":hidden" ) ) {
-    $( "div" ).slideDown( "slow" );
-  } else {
-    $( "div" ).hide();
-  }
-});
-</script>
- 
-</body>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Phoebe Nezamis</title>
+		
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+	</head>
+	<body>
+		<nav>
+    		<ul>
+        		<li><a href="/">Home</a></li>
+	        	<li><a href="/about">About</a></li>
+        		<li><a href="/cv">CV</a></li>
+        		<li><a href="/blog">Blog</a></li>
+    		</ul>
+		</nav>
+		<div class="container">
+    		<div class="blurb">
+        		<h1>Hi I'm Phoebe!</h1>
+				//<p>This is just me trying to get a base for my website so I can make it more awesome later!</a></p>
+    		</div><!-- /.blurb -->
+		</div><!-- /.container -->
+		<footer>
+    		<ul>
+        		<li><a href="mailto:pnezamis@fordham.edu">email</a></li>
+			</ul>
+		</footer>
+	</body>
 </html>
