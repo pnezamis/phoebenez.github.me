@@ -4,10 +4,14 @@ body {
 }
 
 h1 {
-    font-size: ;
+    font-size: 36px;
     font-family:'Bodoni MT', 'Times New Roman', 'Serif';
     color: #2fbf5f;
     text-align: center;
+}
+
+a {
+
 }
 
 #links {
