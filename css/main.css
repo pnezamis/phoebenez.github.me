@@ -4,22 +4,35 @@ body {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 42px;
     font-family:'Bodoni MT', 'Times New Roman', 'Serif';
+    font-style: italic;
     color: #000;
     text-align: center;
 }
 
-a {
-
+a:link {
+    color: #81a7c6;
+    text-decoration: none;
 }
 
-#links {
-    font-size: 12px;
+a:visited {
+    color: green;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+
+#nav {
+    font-size: 16px;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 
 p {
-    font-size: 12px;
+    font-size: 16px;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
