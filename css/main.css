@@ -1,6 +1,7 @@
 body {
-    font-family: "Lato", sans-serif;
-    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
 }
 
 h1 {
@@ -10,15 +11,37 @@ h1 {
     padding: 0px;
     margin: 0px;
     text-align: center;
+    font-weight: lighter;
+    letter-spacing: 1px;
 }
 
 h2 {
     font-size: 36px;
     font-family:'Bodoni MT', 'Times New Roman', 'Serif';
-    text-align: right;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-weight: lighter;
 }
+
+h3 {
+    font-size: 30px;
+    font-family: 'Bodoni MT', 'Times New Roman', 'Serif';
+    letter-spacing: 1px;
+    font-weight: lighter;
+    padding:0px;
+    margin:0px;
+}
+
+h4 {
+    font-size: 25px;
+    font-family: 'Bodoni MT', 'Times New Roman', 'Serif';
+    letter-spacing: 1px;
+    font-weight: lighter;
+    padding:0px;
+    margin:0px;
+}
+
 
 a:link, a:visited {
     color: black;
@@ -32,7 +55,9 @@ a:hover {
 }
 
 p {
-
+    font-weight: lighter;
+    padding: 0px;
+    margin: 10px 0px 20px 0px;
 }
 
 .header {
@@ -45,7 +70,7 @@ p {
 
 .nav {
     text-align: center;
-    border-bottom: 5px solid pink;
+    border-bottom: 5px solid #9dce9a;
     padding-bottom: 10px;
 }
 
@@ -85,8 +110,20 @@ a.active {
 .main {
     margin-top: 150px;
     padding: 0px 10px;
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+    width: 30%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 img {
@@ -94,5 +131,12 @@ img {
     border-radius: 4px;
     padding: 5px;
     margin-right: 5px;
-    width: 200px;
+}
+
+.projects img {
+    opacity: 0.5;
+}
+
+.projects img:hover {
+    opacity: 1.0;
 }
