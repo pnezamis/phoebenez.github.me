@@ -140,3 +140,14 @@ img {
 .projects img:hover {
     opacity: 1.0;
 }
+
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+
+    img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
