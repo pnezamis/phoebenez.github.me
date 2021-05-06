@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Image Search</title>
+        <link href="assets/styles/app.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="shortcut icon" type="image/png" href="assets/icon.png"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+    	<!----Image Details Popup----->
+    	<div id="image-detail-module-container" style="display: none;"> 
+    		<div id="image-detail-header">
+    			<button id="close-details" onclick="closeDetails()">X</button>
+    		</div>
+    		<div id="image-detail-module"> </div>
+		</div>
+
+		<!----Main Content----->
+    	<div id="main">
+
+			<div id="search">
+				<h1 id="header">Search Images</h1>
+				<input id="images-search" placeholder="keyword"> 
+				<select id="colors-search">
+					<option value="all">All Colors</option>
+					<option value="black">Black</option>
+					<option value="white">White</option>
+					<option value="yellow">Yellow</option>
+					<option value="orange">Orange</option>
+					<option value="red">Red</option>
+					<option value="purple">Purple</option>
+					<option value="magenta">Magenta</option>
+					<option value="green">Green</option>
+					<option value="teal">Teal</option>
+					<option value="blue">Blue</option>
+				</select>
+				<button id="search-button" onclick="onClickSearch()"> Search </button>
+				<h3 id="page-num"> </h3>
+			</div>
+
+			<div id="images-grid-container">
+				<div id="images-grid"> </div>
+			</div>
+
+			<div id="pagination" style="display: none;">
+				<a onClick="previousPage()"> < </a>
+				<a onClick="nextPage()"> > </a>
+			</div>
+
+			<div id="footer">
+				Created by Phoebe Nezamis / Powered by <a href="https://unsplash.com" target="_blank">Unsplash</a>
+			</div>
+		</div>
+
+    	<script src="assets/js/app.js"></script>   
+    	<script> 
+    		var search = document.getElementById('images-search');
+    		search.addEventListener('keydown', (e) => {
+    			if (e.key === 'Enter') onClickSearch();
+    		})
+    	</script>
+
+    </body>
+</html>
